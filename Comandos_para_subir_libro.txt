@@ -1,0 +1,21 @@
+Comando para crear el libro
+
+jupyter-book build --all milibro/ 
+
+Comandos para subir el libro a GitHub
+
+git clone https://github.com/LuisGerardo2204/electronica_analogica 
+
+cp -r milibro/* electronica_analogica    
+
+cd electronica_analogica 
+
+git add ./*
+
+git commit -m "Subiendo a GitHub"
+
+git push
+
+ghp-import -n -p -f _build/html
+
+.\subir_a_github.bat
